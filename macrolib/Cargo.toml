@@ -1,7 +1,7 @@
 [package]
 name = "macrolib"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
 
 
 [lib]
@@ -10,5 +10,5 @@ path = "src/lib.rs"
 proc-macro = true
 
 [dependencies]
-quote = "*"
-syn = { version = "*", features = ["full"] }
+quote = "1"
+syn = { version = "2", features = ["full"] }
