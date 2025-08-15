@@ -1,5 +1,8 @@
 #[allow(clippy::disallowed_macros)]
-fn bar() {}
+mod bar {
+    #[macrolib::attrib_macro]
+    fn foo() {}
+}
 
 #[allow(clippy::disallowed_macros)]
 #[macrolib::attrib_macro]
