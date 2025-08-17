@@ -29,3 +29,15 @@ pub fn attrib_macro(_args: TokenStream, input: TokenStream) -> TokenStream {
     }
     .into()
 }
+
+#[proc_macro_derive(CustomDerive)]
+pub fn custom_derive(input: TokenStream) -> TokenStream {
+    // Debug print to see what attributes we receive
+    let input_str = input.to_string();
+    eprintln!("=== CUSTOM DERIVE DEBUG ===");
+    eprintln!("Received input: {}", input_str);
+    eprintln!("=== END DERIVE DEBUG ===");
+
+    // Return empty impl (or whatever you want)
+    TokenStream::new()
+}

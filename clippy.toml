@@ -1,3 +1,5 @@
 disallowed-macros = [
-    "macrolib::attrib_macro"
+    "macrolib::attrib_macro",
+    "macrolib::CustomDerive",
+    "core::clone::Clone",
 ]
