@@ -6,7 +6,7 @@ mod bar {
     fn foo() {}
 }
 
-#[expect(clippy::disallowed_macros)]
+#[expect(clippy::disallowed_macros, reason = "I said so")]
 #[macrolib::attrib_macro]
 fn foo() {}
 
