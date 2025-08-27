@@ -24,7 +24,12 @@ pub fn attrib_macro(_args: TokenStream, input: TokenStream) -> TokenStream {
 
     quote! {
       fn foo() -> &'static str {
+        let it = 42;
+        let that = it + it;
         "foo"
+      }
+      fn foofoo() -> &'static str {
+        "foofoo"
       }
     }
     .into()
